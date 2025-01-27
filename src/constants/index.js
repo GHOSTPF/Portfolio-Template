@@ -12,17 +12,13 @@ import {
   tailwind,
   nodejs,
   git,
-  figma,
   docker,
   postgresql,
-  rubyrails,
-  graphql,
   komikult,
   leaderboard,
   math,
   movie,
   nyeusi,
-  space,
   coverhunt,
   dcc,
   kelhel,
@@ -31,34 +27,46 @@ import {
 
 export const navLinks = [
   {
+    id: '',
+    title: 'Seja Bem-Vindo',
+  },
+  {
     id: 'about',
-    title: 'About',
+    title: 'Sobre',
+  },
+  {
+    id: 'skills',
+    title: 'Habilidades',
   },
   {
     id: 'projects',
-    title: 'Projects',
+    title: 'Projetos',
+  },
+  {
+    id: 'work',
+    title: 'Experiência',
   },
   {
     id: 'contact',
-    title: 'Contact',
+    title: 'Contato',
   },
 ];
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Desenvolvedor Frontend',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'Desenvolvedor Backend',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Design',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Desenvolvedor Mobile',
     icon: prototyping,
   },
 ];
@@ -85,24 +93,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
     name: 'Node JS',
     icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
   },
   {
     name: 'postgresql',
@@ -114,7 +110,7 @@ const technologies = [
   },
   {
     name: 'figma',
-    icon: figma,
+    icon: redux,
   },
   {
     name: 'docker',
@@ -124,40 +120,40 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Desenvolvedor Full-Stack em Projetos Escolares',
+    company_name: 'IFPB',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Janeiro 2021 - Dezembro 2023',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Projeto Barbearia',
+    company_name: 'Marcos Barbearia',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Junho 2023 - Julho 2023',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Desenvolvedor Plêno',
+    company_name: 'Remake Sistemas',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'Abril 2024 - Agora',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Desenvolvedor Full-Stack Mobile',
+    company_name: 'Seu Marcos Barbearia',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Janeiro 2025',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Barbearia',
+    description: 'Sistema estilo agendamento via email, com localização, serviços e tudo mais sobre o projeto.',
     tags: [
       {
         name: 'react',
@@ -173,14 +169,14 @@ const projects = [
       },
     ],
     image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/GHOSTPF/Barbearia',
+    demo: 'https://pablo.mateustavares.com.br/TCC%20-%20PI/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'SST',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Um sistema educacional feito com PHP para alunos do IFPB, no curso de Informatica.',
     tags: [
       {
         name: 'react',
@@ -196,13 +192,13 @@ const projects = [
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: 'https://github.com/GHOSTPF/Start_Soft_tech',
+    demo: 'https://pablo.mateustavares.com.br/SITE%20NOVO/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Projeto Resort',
+    description: 'Projeto de Aprendizado e aprimoração em TailWind.',
     tags: [
       {
         name: 'nextjs',
@@ -218,13 +214,13 @@ const projects = [
       },
     ],
     image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    repo: 'https://github.com/GHOSTPF/Projeto-Resort-Tailwind',
+    demo: 'https://oasis-costeiro-resort.netlify.app/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Marcos Barbearia',
+    description: "Projeto com fins Financeiros sobre um sistema de agendamento mobile em conjunto com um dashboard administrativo.",
     tags: [
       {
         name: 'nextjs',
@@ -240,8 +236,8 @@ const projects = [
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    repo: 'https://github.com/GHOSTPF',
+    demo: 'https://github.com/GHOSTPF',
   },
   {
     id: 'project-5',
